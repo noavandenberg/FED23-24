@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Noa van den Berg
 
   #### Je startniveau:
-  Blauw
+  Blauwe piste
 
   #### Je focus:
   Responsive
@@ -36,15 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  [link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp](https://www.boozyshop.nl/) makeup webshop
+  webshop voor make-up producten
+  [link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp](https://www.boozyshop.nl/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  home pagina  
+  <img src="readme-images/pagina-een.jpg" width="375px" alt="home pagina van webshop boozyshop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  product pagina laneige lip sleeping mask
+  <img src="readme-images/pagina-twee.jpg" width="375px" alt="product pagina van     webshop boozyshop">
  
 </details>
 
@@ -57,6 +58,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  home pagina
+  -herhalende voice over met links opnoemen
+  -verwarrende volgorde opnoemen met de voice over
+  -alt teksten niet duidelijk genoeg
+  -kan de content van extra producten toevoegen niet herkennen
+  -noemt de prijzen bij de hoofdpagina niet op
+
+  product pagina
+  -geen alt teksten bij de productfoto's
+  -bij de timer loopt de voiceover vast omdat hij gereset word
+  -herhalende links met voice over
+  -geen goede volgorde met opnoemen
+  -prijs wordt niet opgenmoemd die slaat hij over als je in volgorde de pagina afgaat
+
+
 
 </details>
 
@@ -67,11 +83,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de hele eerste pagina: 
+  <img src="readme-images/html-breakdownschets-fed.jpg" width="375px" alt="breakdown van de eerste hele pagina">
+  
+  ### de hele tweede pagina:
+  <img src="readme-images/html-breakdownschets2-fed.jpg" width="375px" alt="breakdown van de tweede hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel (menu): 
+  <img src="readme-images/html-breakdownschets3-fed.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
