@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Noa van den Berg
+  Noa van den Berg, 500924783, 02-09-2024
 
   #### Je startniveau:
   Blauwe piste
@@ -59,18 +59,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   home pagina
-  -herhalende voice over met links opnoemen
-  -verwarrende volgorde opnoemen met de voice over
-  -alt teksten niet duidelijk genoeg
-  -kan de content van extra producten toevoegen niet herkennen
-  -noemt de prijzen bij de hoofdpagina niet op
+  - herhalende voice over met links opnoemen
+  - verwarrende volgorde opnoemen met de voice over
+  - alt teksten niet duidelijk genoeg
+  - kan de content van extra producten toevoegen niet herkennen
+  - noemt de prijzen bij de hoofdpagina niet op
 
   product pagina
-  -geen alt teksten bij de productfoto's
-  -bij de timer loopt de voiceover vast omdat hij gereset word
-  -herhalende links met voice over
-  -geen goede volgorde met opnoemen
-  -prijs wordt niet opgenmoemd die slaat hij over als je in volgorde de pagina afgaat
+  - geen alt teksten bij de productfoto's
+  - bij de timer loopt de voiceover vast omdat hij gereset word
+  - herhalende links met voice over
+  - geen goede volgorde met opnoemen
+  - prijs wordt niet opgenmoemd die slaat hij over als je in volgorde de pagina afgaat
 
 
 
