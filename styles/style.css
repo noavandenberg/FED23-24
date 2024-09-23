@@ -6,10 +6,6 @@
 }
 
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -20,12 +16,186 @@
 }
 
 
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* toegankelijkheid */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+header {
+    background-color: #ff69b4;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+    background-color: #ff1493;
+    outline: none;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #ff69b4;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu li a {
+        padding: 1em;
+        text-align: center;
+    }
+}
+
+/* Basisstijl voor responsive en toegankelijkheid */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.5;
+}
+
+header {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Layout met CSS Grid */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    /* max-width: 100%; */
+	width: 40px;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+/* Toegankelijkheid voor grote tekst */
+p {
+    margin: 1em 0;
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+/* Hover- en focus-stijlen voor interactie */
+article:hover, article:focus-within {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*footer*/
+
+
 

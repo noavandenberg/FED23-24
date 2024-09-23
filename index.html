@@ -14,37 +14,77 @@
 
 <body>
 	<header>
-		<h1>Boozyshop</h1>
-
 		<nav aria-label="Hoofdnavigatie">
-		  <ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/">Nieuw</a></li>
-			<li><a href="/">Make-up</a></li>
-			<li><a href="/">Verzorging</a></li>
-			<li><a href="/">Sale</a></li>
-			<li><a href="/">Contact</a></li>
-		  </ul>
+			<img src="images/logo-boozyshop.svg" alt="logo boozyshop">
+				<a href="#" aria-label="Boozyshop Home">Boozyshop</a>
+			<button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+				<span class="visually-hidden">Menu</span>
+				&#9776;
+			</button>
+			<ul id="menu" class="menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#producten">Producten</a></li>
+				<li><a href="#over-ons">Over ons</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 		</nav>
-	  
-		<form action="/zoekresultaten" method="get" role="search">
-		  <label for="search">Zoeken</label>
-		  <input type="text" id="search" name="query" placeholder="Zoeken...">
-		  <button type="submit">Zoek</button>
-		</form>
 	  </header>
 	
 	<main>
+		<h1>In the spotlight</h1>
 		<section>
+			<article>
+				<figure>
+					<img src="images/handcreme.jpg" alt="Boozyshop Skin Perfecting Vitamin C Serum">
+					<figcaption>Skin Perfecting Vitamin C Serum</figcaption>
+				</figure>
+				<p>The serum for a radiant skin</p>
+			</article>
+	
+			<article>
+				<figure>
+					<img src="images/foundation.jpg" alt="Catrice Invisible Cover Foundation">
+					<figcaption>Catrice Invisible Cover Foundation</figcaption>
+				</figure>
+				<p>Shop your must-have foundation!</p>
+			</article>
+	
+			<article>
+				<figure>
+					<img src="images/foundation.jpg" alt="NYX Cosmetics">
+					<figcaption>NYX Cosmetics</figcaption>
+				</figure>
+			</article>
+	
+			<article>
+				<figure>
+					<img src="images/hairsweets_banner.jpg" alt="New Haircare - Slick Stick">
+					<figcaption>NEW haircare</figcaption>
+				</figure>
+			</article>
+	
+			<article>
+				<figure>
+					<img src="images/foundation.jpg" alt="Essence new in - Midnight Bite">
+					<figcaption>Essence new in</figcaption>
+				</figure>
+			</article>
+	
+			<article>
+				<figure>
+					<img src="images/hairsweets_banner.jpg" alt="Hairsweets Haar Vitamine - 80% Off">
+					<figcaption>Big Sale - 80% OFF</figcaption>
+				</figure>
+			</article>
 		</section>
-		<h2>New Arrivals</h1>
-		<h3>Yay! It's all new</h2>
 	</main>
 
 	<footer>
 
 
 	</footer>
+	
+	
 
 	<script defer src="scripts/script.js"></script>
 </body>
