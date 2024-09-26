@@ -1,10 +1,12 @@
 // JavaScript Document
 console.log("hi");
 
-const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
-    menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-        menuToggle.setAttribute('aria-expanded', !expanded);
-        menu.classList.toggle('open');
+    // Toggle the menu when the button is clicked
+    menuToggle.addEventListener('click', function () {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('show-menu');
+    });
