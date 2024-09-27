@@ -2,9 +2,14 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+    box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
 }
 
+img{
+    max-width: 100%;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -20,31 +25,13 @@
 /* JOUW STYLING */
 /****************/
 
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+/* body {
     font-family: "open-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 2em;
-}
+} */
 
-/* toegankelijkheid */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
 
 h1 {
     font-family: "bree-serif", serif;
@@ -52,234 +39,129 @@ h1 {
     font-style: normal;
 }
 
-img {
+a {
+    font-family: "bree-serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
     /* max-width: 100%; */
-	width: 40px;
+	width: 40%;
     height: auto;
     display: block;
 }
 
-header form {
-    padding:.75em;
-    background-color:pink;
-    border: 1px;
-    border-color: #333;
-    
-    /* jouw code hier */
-    flex-grow:5;
-    display:flex;
-    justify-content:flex-end;
-  }
-  
-  header form input { 
-    width:0;
-    
-    /* jouw code hier */
-    flex-grow:1;  
-  }
-  
-  /* styling van het zoekveld en de button */
-  /* hoef je niets aan te veranderen */
-  
-  input, button {
-    /* om de standaard style op bijv. iOS te voorkomen */
-    -webkit-appearance:none;
-    appearance:none;
-    border:none;
-    font:inherit;
-  }
-  
-  header form input {
-    min-width:12em;
-    max-width:38em;
-    line-height:2em;
-    padding:0 .5em;
-  }
-  
-  header form button {
-    line-height:2em;
-    padding:0 .5em;
-    background-color:var(--color-search-button-background);
-    color:white;
-    cursor:pointer;
-  }
-
 header {
-    background-color: #ffffff;
-    padding: 1em;
-}
+    background-color: #f7f7f7;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 5px;
+    color: #333;
+  }
 
-.logo{
-    width: 130px;
-}
+  header p {
+    margin: 0;
+  }
 
-.l4us{
-    text-decoration: none;
-    display: flex;
-}
-
-nav {
+  /* Logo en zoekbalk sectie */
+  section {
     display: flex;
     justify-content: space-between;
-    align-items: left;
-}
-
-nav a {
-    font-family: "bree-serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.8125em;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    
-}
-a {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-    text-decoration: none;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  a::after {
-    content: '';
+  h1 {
+    font-size: 2rem;
+    font-family: 'Cursive', sans-serif;
+    color: #ff4081;
+  }
+
+  form {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+
+  label {
     position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    border-radius: 5px;
-    height: 0.05em;
-    bottom: 0;
-    left: 0;
-    background: currentcolor;
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
-  }
-  a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    clip: rect(1px, 1px, 1px, 1px); /* Verberg label maar hou toegankelijk */
   }
 
-.menu {
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  /* Navigatie */
+  nav {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+
+  ul {
     list-style: none;
     display: flex;
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-.menu li a {
-    color: rgb(0, 0, 0);
+  li {
+    margin: 0 10px;
+  }
+
+  a {
     text-decoration: none;
-    padding: 0.75em 1.5em;
-    display: block;
-    transition: background-color 0.3s ease;
-}
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
 
-.menu li a:hover,
-.menu li a:focus {
-    background-color: #ffffff;
-    outline: none;
-}
+  a:hover, a:focus {
+    color: #ff4081;
+  }
 
-
-/* Hamburger menu button */
-.menu-toggle {
+  /* Hamburger Menu */
+  button.hamburger {
     display: none;
     background: none;
     border: none;
-    font-size: 2em;
-    color: white;
+    font-size: 2rem;
     cursor: pointer;
-}
+  }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #ff69b4;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1;
-    }
-
-    .menu.open {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu li a {
-        padding: 1em;
-        text-align: center;
-    }
-}
-
-/* Basisstijl voor responsive en toegankelijkheid */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    padding: 2em;
-}
-
-h1 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-/* Layout met CSS Grid */
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
-}
-
-article {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 1em;
-}
-
-figure {
-    margin: 0;
-}
-
-
-figcaption {
-    font-weight: bold;
-    margin: 0.5em 0;
-}
-
-/* Toegankelijkheid voor grote tekst */
-p {
-    margin: 1em 0;
-    font-size: 1em;
-    color: #333;
-}
-
-@media (max-width: 768px) {
+  /* Responsiveness */
+  @media (max-width: 768px) {
     section {
-        grid-template-columns: 1fr;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    h1 {
-        text-align: center;
+    form {
+      margin-left: 0;
+      margin-top: 10px;
     }
-}
 
-/* Hover- en focus-stijlen voor interactie */
-article:hover, article:focus-within {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
-/*footer*/
+    nav ul.active {
+      display: flex;
+    }
 
-
-
+    button.hamburger {
+      display: block;
+    }
+  }
