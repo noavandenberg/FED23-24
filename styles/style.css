@@ -25,25 +25,45 @@ img{
 /* JOUW STYLING */
 /****************/
 
-/* body {
+body {
     font-family: "open-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 2em;
-} */
+}
+
+p{
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
-h1 {
+h1{
     font-family: "bree-serif", serif;
     font-weight: 700;
     font-style: normal;
 }
+
+h4{
+    font-family: "bree-serif", serif;
+    font-weight: 400;
+    font-style: normal;   
+    font-size: 1.3em;
+    margin-bottom: 0.6em;
+}
+
 
 a {
     font-family: "bree-serif", serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: #333;
 }
+
+a:hover, a:focus {
+    color: #ff4081;
+  }
 
 .logo {
     /* max-width: 100%; */
@@ -54,7 +74,6 @@ a {
 
 header {
     background-color: #f7f7f7;
-    font-size: 0.9rem;
     text-align: left;
     padding: 5px;
     color: #333;
@@ -67,7 +86,6 @@ header {
   /* Logo en zoekbalk sectie */
   section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
@@ -78,8 +96,7 @@ header {
   }
 
   h1 {
-    font-size: 2rem;
-    font-family: 'Cursive', sans-serif;
+    font-size: 2em;
     color: #ff4081;
   }
 
@@ -104,7 +121,6 @@ header {
   /* Navigatie */
   nav {
     background-color: #fff;
-    padding: 10px 20px;
   }
 
   ul {
@@ -114,23 +130,13 @@ header {
     flex-wrap: wrap;
   }
 
-  li {
-    margin: 0 10px;
+  li{
+    text-align: left;
   }
 
-  a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-
-  a:hover, a:focus {
-    color: #ff4081;
-  }
 
   /* Hamburger Menu */
-  button.hamburger {
+  header nav button {
     display: none;
     background: none;
     border: none;
@@ -165,3 +171,199 @@ header {
       display: block;
     }
   }
+
+  /* subscribe to email */
+/* Formulier styling */
+form {
+    background-image: url('images/boozyshop-achtergrond-email.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    position: absolute;
+    left: -9999px; /* Visueel verbergen, maar toegankelijk houden */
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-text-color);
+    color: var(--button-color);
+}
+
+
+  /* footer code*/
+
+  footer {
+    background-color: #ffffff;
+    text-align: left;
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #333;
+    display: flex; /* Flexbox toegepast */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Zorgt ervoor dat content naar de volgende regel gaat als het niet past */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+  }
+  
+
+  footer section, 
+  footer nav, 
+  footer address {
+    flex: 1;
+    min-width: 150px;
+    max-width: 300px;
+    margin-right: 20px;
+  }
+  
+  footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: none;
+  }
+
+footer section ul{
+    width:100%
+}
+
+  footer section li{
+    display:block;
+    width: 100%;
+  }
+  
+
+  footer p {
+    font-size: 0.8rem;
+  }
+  
+  footer strong {
+    font-size: 1.em;
+  }
+
+  footer a{
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Styling for the social media icons */
+  nav[aria-label="Social media"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav[aria-label="Social media"] ul li {
+    display: inline;
+  }
+  
+  nav[aria-label="Social media"] ul li a img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Styling for the navigation links */
+  nav[aria-label="Klantenservice"], nav[aria-label="Categorieën"] {
+    margin-bottom: 20px;
+  }
+  
+  nav[aria-label="Klantenservice"] ul, 
+  nav[aria-label="Categorieën"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav[aria-label="Klantenservice"] ul li,
+  nav[aria-label="Categorieën"] ul li {
+    margin: 3px 0;
+  }
+  
+  nav[aria-label="Klantenservice"] ul li a, 
+  nav[aria-label="Categorieën"] ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  nav[aria-label="Klantenservice"] ul li a:hover, 
+  nav[aria-label="Categorieën"] ul li a:hover {
+    color: #ff4081;
+  }
+  
+  /* Address section styling */
+  address {
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  
+  address p {
+    margin: 3px 0;
+  }
+  
+  address a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  address a:hover {
+    text-decoration: none;
+  }
+
+
+
+  section img{
+    margin-right: 1em;
+    width:11%;
+  }
+
+
+
+
+  
+  /* Payment methods styling
+  section[aria-label="Payment methods"] p {
+    margin: 10px 0;
+  }
+  
+  section[aria-label="Payment methods"] img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  } */
+  
+  
+  @media (max-width: 768px) {
+    footer {
+       flex-direction: column;
+       align-items: flex-start; /* Plaats de secties onder elkaar op mobiel */
+    }
+}
