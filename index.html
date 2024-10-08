@@ -18,38 +18,46 @@
 <body>
 	
 <header>
-		
-		<p>Voor <strong>20:00</strong> besteld, <strong>morgen</strong> in huis &bull; Gratis bezorging vanaf €40 &bull; Gift vanaf €35</p>
+	<h1><img src="images/logo-boozyshop.svg" alt="Logo boozyshop" class="logo"></h1>
 
-	<section>
-		<h1><img src="images/logo-boozyshop.svg" alt="Logo boozyshop" class="logo"></h1>
-		<form role="search" aria-label="Zoek op Boozyshop">
-		  <label for="search">Waar ben je naar op zoek?</label>
-		  <input type="text" id="search" name="search" placeholder="Waar ben je naar op zoek?">
-		</form>
-	</section>
+	<button>Menu openen</button>
+	<nav aria-label="Main Navigation"></nav>
+		<button aria-expanded="false" aria-controls="menu" aria-label="Menu sluiten">&#9776;</button>
 
-	  <nav aria-label="Main Navigation"></nav>
-			<button aria-expanded="false" aria-controls="menu" aria-label="Menu openen">&#9776;</button>
-			<ul id="menu" class="menu">
-				<li><a href="#home">Bij Boozyshop</a></li>
-				<li><a href="#producten">Nieuw</a></li>
-				<li><a href="#over-ons">Sale</a></li>
-				<li><a href="#contact">Make Up</a></li>
-				<li><a href="#contact">Make Up Kwasten</a></li>
-				<li><a href="#contact">Skincare</a></li>
-				<li><a href="#contact">Haar</a></li>
-				<li><a href="#contact">Korean Beauty</a></li>
-				<li><a href="#contact">Tanning</a></li>
-				<li><a href="#contact">Nagels</a></li>
-				<li><a href="#contact">Dupes</a></li>
-				<li><a href="#contact">Merken</a></li>
-				<li><a href="#contact">Halloween</a></li>
-			</ul>
-		</nav>
+		<ul id="menu" class="menu">
+			<li><a href="#home">Bij Boozyshop</a></li>
+			<li><a href="#producten">Nieuw</a></li>
+			<li><a href="#over-ons">Sale</a></li>
+			<li><a href="#contact">Make Up</a></li>
+			<li><a href="#contact">Make Up Kwasten</a></li>
+			<li><a href="#contact">Skincare</a></li>
+			<li><a href="#contact">Haar</a></li>
+			<li><a href="#contact">Korean Beauty</a></li>
+			<li><a href="#contact">Tanning</a></li>
+			<li><a href="#contact">Nagels</a></li>
+			<li><a href="#contact">Dupes</a></li>
+			<li><a href="#contact">Merken</a></li>
+			<li><a href="#contact">Halloween</a></li>
+		</ul>
+	</nav>
 
+	<form role="search" aria-label="Zoek op Boozyshop"></form>
+		<label for="search">Waar ben je naar op zoek?</label>
+		<input type="text" id="search" name="search" placeholder="Waar ben je naar op zoek?">
+	</form>
 
-		  
+	<nav>
+		<ul>
+			<li><button>inloggen</button></li>
+			<li><button>widhlist</button></li>
+			<li><a href="">shop cart</a></li>
+		</ul>
+	</nav>
+
+	<p>
+		Voor <strong>20:00</strong> besteld, 
+		<strong>morgen</strong> in huis &bull; 
+		Gratis bezorging vanaf €40 &bull; Gift vanaf €35</p>  
 </header>
 
 <main>
