@@ -255,3 +255,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   3. ...
 
 </details>
+
+inline-block is ignored due to the float. If 'float' has a value other than 'none', the box is floated and 'display' is treated as 'block'

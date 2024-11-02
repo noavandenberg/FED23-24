@@ -9,6 +9,7 @@
 	<title>De online make-up en skincare webshop van Nederland - Boozyshop</title>
 	
 	<link rel="stylesheet" href="https://use.typekit.net/gnz2kbe.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link href="styles/style.css" rel="stylesheet">
 	
 
@@ -18,6 +19,27 @@
 <body>
 	
 <header>
+
+	<nav id="nav-top">
+		<ul>
+			<li class="check">
+				<span>Voor <strong>20:00 </strong>besteld, <strong>morgen</strong> in huis</span>
+			</li>
+			<li class="check">
+				<span><strong>Gratis bezorging</strong> vanaf 40 euro</span>
+			</li>
+			<li class="check">
+				<span><strong>Gift</strong> vanaf 35 euro</span>
+			</li>
+			<li>
+				<a href="#">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32"><title>headphone</title><path fill="var(--primary_text)" d="M34.909 19.006c0-0.582-0.194-0.97-0.582-1.358-0.194-4.461-1.939-8.727-4.849-12.024-3.103-3.491-7.564-5.624-12.024-5.624s-8.921 2.133-12.024 5.624c-2.909 3.297-4.655 7.37-4.848 12.024-0.388 0.194-0.582 0.776-0.582 1.358v5.818c0 0.388 0.194 0.97 0.582 1.164v0.776c0 2.909 2.327 5.43 5.43 5.43s5.43-2.327 5.43-5.43v-5.818c-0.194-3.103-2.715-5.43-5.624-5.43-0.776 0-1.551 0.194-2.133 0.388 0.582-3.103 1.939-6.206 3.879-8.533 2.715-2.909 6.206-4.461 9.891-4.461s7.176 1.551 9.891 4.655c2.133 2.327 3.491 5.236 3.879 8.533-0.582-0.388-1.358-0.582-2.133-0.582-2.909 0-5.43 2.327-5.43 5.43v5.818c0 2.909 2.327 5.43 5.43 5.43s5.43-2.327 5.43-5.43v-0.776c0.388-0.388 0.582-0.776 0.582-1.164v-5.818zM5.818 18.424c1.358 0 2.521 1.164 2.521 2.521v5.818c0 1.164-1.164 2.327-2.521 2.327s-2.521-1.164-2.521-2.521v-0.776c0.388-0.194 0.582-0.582 0.582-0.97v-5.43c0.388-0.582 1.164-0.97 1.939-0.97zM29.091 29.091c-1.358 0-2.521-1.164-2.521-2.521v-5.818c0-1.358 1.164-2.521 2.521-2.521 0.776 0 1.552 0.388 1.939 0.97v5.236c0 0.388 0.194 0.97 0.582 1.164v0.776c0 1.552-1.164 2.715-2.521 2.715z"></path></svg>
+					<span>Klantenservice</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
 	<h1><img src="images/logo-boozyshop.svg" alt="Logo boozyshop" class="logo"></h1>
 
 	<button>Menu openen</button>
@@ -54,10 +76,11 @@
 		</ul>
 	</nav>
 
-	<p>
+
+	<!-- <p>
 		Voor <strong>20:00</strong> besteld, 
 		<strong>morgen</strong> in huis &bull; 
-		Gratis bezorging vanaf €40 &bull; Gift vanaf €35</p>  
+		Gratis bezorging vanaf €40 &bull; Gift vanaf €35</p>   -->
 </header>
 
 <main>
@@ -141,8 +164,11 @@
 		<!-- Customer Service -->
 	<section>
 		<nav aria-label="Klantenservice">
-			<h4>Klantenservice</h4>
 			<details>
+		<summary>
+		<h4>Klantenservice</h4>
+		</summary>
+			
 		  <ul>
 			<li><a href="#">Contact</a></li>
 			<li><a href="#">About us</a></li>
@@ -161,7 +187,11 @@
 		<!-- Categories -->
 	<section>
 		<nav aria-label="Categorieën">
+			<details>
+			<summary>
 			<h4>Categorieën</h4>
+		</summary>
+
 		  <ul>
 			<li><a href="#giftcard">Giftcard</a></li>
 			<li><a href="#by-boozyshop">By Boozyshop</a></li>
@@ -177,18 +207,23 @@
 			<li><a href="#dupes">Dupes</a></li>
 			<li><a href="#brands">Brands</a></li>
 		  </ul>
+		</details>
 		</nav>
 	</section>
 	  
 		<!-- Boozyshop contact info -->
 	<section>
 		<address>
+			<details>
+		<summary>
 		<h4>Boozyshop</h4>
+		</summary>
 		  <p>Boozyshop BV</p>
 		  <p>Hogeweg 14</p>
 		  <p>4561 RA Hulst</p>
+		  </address>
 		  <p><a href="mailto:hello@boozyshop.com">hello@boozyshop.com</a></p>
-		</address>
+		</details>
 	</section>
 	  
 	  
